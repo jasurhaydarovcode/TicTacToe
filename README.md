@@ -2,7 +2,7 @@
 
 # 🎮 Tic Tac Toe - Windows Forms (C#)
 
-<img src="https://static.wikia.nocookie.net/board-games-galore/images/4/47/Tictactoe-winning-vector-639732.jpg/revision/latest?cb=20160711013756" width=100>
+<img src=".github/x.png" width="100">
 
 </div>
 
@@ -10,6 +10,7 @@ Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **T
 
 ## 📌 Xususiyatlar
 - 🔹 **Kompyuterga qarshi o'ynash** imkoniyati
+- 🔹 **1 ga 1 o'ynash --><a href="https://github.com/jasurhaydarovcode/TicTacToe/tree/1_vs_1">1vs1</a>** imkoniyati
 - 🔹 Windows Forms GUI interfeysi
 - 🔹 O'yin natijalarini hisoblash va ko'rsatish
 - 🔹 Qayta boshlash va chiqish imkoniyati
