@@ -22,16 +22,23 @@ Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **T
 
 ## 📂 Loyihani tuzilmasi
 
-```
-Development progresses.
-```
-
-## 🚀 O'rnatish va Ishga Tushirish
-
-### 1️⃣ **Loyihani klonlash:**
-
-```bash
-Development progresses.
+```plaintext
+TicTacToe/
+│── .github/            # GitHub uchun maxsus papka
+│── TicTacToe/          # Asosiy dastur kodi
+│   ├── bin/            # Ilovaning ishlashi uchun yig'ilgan fayllar
+│   ├── obj/            # Vaqtinchalik fayllar
+│   ├── Properties/     # Loyiha xususiyatlari va konfiguratsiya fayllari
+│   ├── App.config      # Ilova konfiguratsiya fayli
+│   ├── favicon.ico     # Ilova uchun favicon
+│   ├── Form1.cs        # Asosiy o'yin formasi kodi
+│   ├── Form1.Designer.cs # Windows Forms dizayner kodi
+│   ├── Form1.resx      # Resurs fayli
+│   ├── Program.cs      # Ilovani ishga tushirish kodi
+│   ├── TicTacToe.csproj # Loyiha konfiguratsiyasi (Visual Studio uchun)
+│── .gitignore          # Git tomonidan e'tiborga olinmaydigan fayllar
+│── README.md           # Loyihaning tavsifi
+│── TicTacToe.sln       # Visual Studio Solution fayli
 ```
 
 ---
@@ -58,7 +65,5 @@ Pull request yoki issue yaratib, loyihaga o'z hissangizni qo'shishingiz mumkin. 
   - Telegram: [Jace](https://t.me/KanYonA) 📱  
   - Email: [jasur@csharp.com](mailto:jasurhaydarovocde@gmail.com) ✉️  
   - GitHub: [github.com/jasurhaydarovcode](https://github.com/jasurhaydarovcode) 🐙
-
-🚀 Jasur – C# va ochiq kod loyihalari bilan shug‘ullanayotgan dasturchi. Uning GitHub’dagi ishlarini ko‘rib chiqing! 😊
 
 ---
