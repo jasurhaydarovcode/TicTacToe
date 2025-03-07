@@ -65,6 +65,4 @@ Pull request yoki issue yaratib, loyihaga o'z hissangizni qo'shishingiz mumkin. 
   - Email: [jasur@csharp.com](mailto:jasurhaydarovocde@gmail.com) ✉️  
   - GitHub: [github.com/jasurhaydarovcode](https://github.com/jasurhaydarovcode) 🐙
 
-🚀 Jasur – C# va ochiq kod loyihalari bilan shug‘ullanayotgan dasturchi. Uning GitHub’dagi ishlarini ko‘rib chiqing! 😊
-
 ---
