@@ -10,7 +10,6 @@ Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **T
 
 ## 📌 Xususiyatlar
 - 🔹 **1 ga 1 (PvP) o'ynash** imkoniyati
-- 🔹 **1 ga 1 o'ynash --><a href="https://github.com/jasurhaydarovcode/TicTacToe/tree/1_vs_1">1vs1</a>** imkoniyati
 - 🔹 Windows Forms GUI interfeysi
 - 🔹 O'yin natijalarini hisoblash va ko'rsatish
 - 🔹 Qayta boshlash va chiqish imkoniyati
@@ -20,18 +19,25 @@ Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **T
 - ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 - ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D7?style=for-the-badge&logo=windows&logoColor=white)
 
-## 📂 Loyihani tuzilmasi
+## 📂 Loyihaning tuzilmasi
 
-```
-Development progresses.
-```
-
-## 🚀 O'rnatish va Ishga Tushirish
-
-### 1️⃣ **Loyihani klonlash:**
-
-```bash
-Development progresses.
+```plaintext
+TicTacToe/
+│── .github/            # GitHub uchun maxsus papka
+│── TicTacToe/          # Asosiy dastur kodi
+│   ├── bin/            # Ilovaning ishlashi uchun yig'ilgan fayllar
+│   ├── obj/            # Vaqtinchalik fayllar
+│   ├── Properties/     # Loyiha xususiyatlari va konfiguratsiya fayllari
+│   ├── App.config      # Ilova konfiguratsiya fayli
+│   ├── favicon.ico     # Ilova uchun favicon
+│   ├── Form1.cs        # Asosiy o'yin formasi kodi
+│   ├── Form1.Designer.cs # Windows Forms dizayner kodi
+│   ├── Form1.resx      # Resurs fayli
+│   ├── Program.cs      # Ilovani ishga tushirish kodi
+│   ├── TicTacToe.csproj # Loyiha konfiguratsiyasi (Visual Studio uchun)
+│── .gitignore          # Git tomonidan e'tiborga olinmaydigan fayllar
+│── README.md           # Loyihaning tavsifi
+│── TicTacToe.sln       # Visual Studio Solution fayli
 ```
 
 ---
