@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🎮 Tic Tac Toe - Windows Forms (C#)
+# 🎮 Tic Tac Toe - Windows Forms (C#) (1vs1)
 
 <img src=".github/x.png" width="100">
 
 </div>
 
-Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **Tic Tac Toe** o'yinidir. Foydalanuvchilar kompyuterga qarshi o'ynashlari mumkin.
+Bu loyiha **C#** dasturlash tilida va **Windows Forms** yordamida yaratilgan **Tic Tac Toe** o'yinidir. Foydalanuvchilar bir-birlariga qarshi o'ynashlari mumkin.
 
 ## 📌 Xususiyatlar
-- 🔹 **Kompyuterga qarshi o'ynash** imkoniyati
+- 🔹 **1 ga 1 (PvP) o'ynash** imkoniyati
 - 🔹 **1 ga 1 o'ynash --><a href="https://github.com/jasurhaydarovcode/TicTacToe/tree/1_vs_1">1vs1</a>** imkoniyati
 - 🔹 Windows Forms GUI interfeysi
 - 🔹 O'yin natijalarini hisoblash va ko'rsatish
