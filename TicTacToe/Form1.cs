@@ -14,7 +14,7 @@ namespace TicTacToe
     {
         string gameDev = "Jasur Haydarov";
         int navbat = 0;
-        Random random = new Random(); // Random generator for bot moves
+        Random random = new Random();
 
         // Store all buttons for easy access
         private List<Button> buttons;
@@ -58,29 +58,103 @@ namespace TicTacToe
                 return;
 
             // Bot's move (O)
-            MakeBotMove();
+            MakeSmartBotMove();
             navbat++;
 
             // Check if bot won or if it's a draw
             CheckForWinner();
         }
 
-        private void MakeBotMove()
+        private void MakeSmartBotMove()
         {
-            // Get list of all available (enabled) buttons
-            List<Button> availableButtons = buttons.Where(btn => btn.Enabled).ToList();
+            // Try to win first
+            if (TryToWinOrBlock("O"))
+                return;
 
+            // If can't win, try to block player from winning
+            if (TryToWinOrBlock("X"))
+                return;
+
+            // If center is available, take it
+            if (button5.Enabled)
+            {
+                MakeMove(button5);
+                return;
+            }
+
+            // Try to take corners
+            List<Button> corners = new List<Button> { button1, button3, button7, button9 };
+            foreach (Button corner in corners)
+            {
+                if (corner.Enabled)
+                {
+                    MakeMove(corner);
+                    return;
+                }
+            }
+
+            // If none of the above, make a random move
+            List<Button> availableButtons = buttons.Where(btn => btn.Enabled).ToList();
             if (availableButtons.Count > 0)
             {
-                // Select random button from available ones
                 int randomIndex = random.Next(0, availableButtons.Count);
-                Button randomButton = availableButtons[randomIndex];
-
-                // Make bot's move
-                randomButton.Text = "O";
-                randomButton.BackColor = Color.LightPink;
-                randomButton.Enabled = false;
+                MakeMove(availableButtons[randomIndex]);
             }
+        }
+
+        private bool TryToWinOrBlock(string symbol)
+        {
+            // Check rows
+            for (int i = 0; i < 3; i++)
+            {
+                if (CheckLineForTwoSymbols(buttons[i * 3], buttons[i * 3 + 1], buttons[i * 3 + 2], symbol))
+                    return true;
+            }
+
+            // Check columns
+            for (int i = 0; i < 3; i++)
+            {
+                if (CheckLineForTwoSymbols(buttons[i], buttons[i + 3], buttons[i + 6], symbol))
+                    return true;
+            }
+
+            // Check diagonals
+            if (CheckLineForTwoSymbols(buttons[0], buttons[4], buttons[8], symbol))
+                return true;
+
+            if (CheckLineForTwoSymbols(buttons[2], buttons[4], buttons[6], symbol))
+                return true;
+
+            return false;
+        }
+
+        private bool CheckLineForTwoSymbols(Button b1, Button b2, Button b3, string symbol)
+        {
+            // If two buttons have the symbol and the third is empty, make a move there
+            if (b1.Text == symbol && b2.Text == symbol && b3.Enabled)
+            {
+                MakeMove(b3);
+                return true;
+            }
+            if (b1.Text == symbol && b3.Text == symbol && b2.Enabled)
+            {
+                MakeMove(b2);
+                return true;
+            }
+            if (b2.Text == symbol && b3.Text == symbol && b1.Enabled)
+            {
+                MakeMove(b1);
+                return true;
+            }
+
+            return false;
+        }
+
+        private void MakeMove(Button button)
+        {
+            button.Text = "O";
+            button.BackColor = Color.LightPink;
+            button.Enabled = false;
         }
 
         private bool CheckForWinner()
